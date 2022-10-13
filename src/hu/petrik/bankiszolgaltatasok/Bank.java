@@ -17,6 +17,7 @@ public class Bank {
             return megtakaritasi;
         } else {
             HitelSzamla hitelszamla = new HitelSzamla(tulajdonos, HitelKeret);
+            szamlaLista.add(hitelszamla);
             return hitelszamla;
 
         }
