@@ -2,7 +2,7 @@ package hu.petrik.bankiszolgaltatasok;
 
 public class Kartya extends BankiSzolgaltatas {
 
-    private Szamla szamla;
+    private final Szamla szamla;
     private String kartyaSzam;
 
     public Kartya(Tulajdonos tulajdonos, Szamla szamla, String kartyaSzam) {
@@ -15,5 +15,14 @@ public class Kartya extends BankiSzolgaltatas {
     public String getKartyaSzam() {
         return kartyaSzam;
     }
-    //todo vasarlas
+    public boolean vasarlas(int osszeg){
+        if (this.vasarlas(osszeg)==true)
+        {
+            this.vasarlas(osszeg);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
