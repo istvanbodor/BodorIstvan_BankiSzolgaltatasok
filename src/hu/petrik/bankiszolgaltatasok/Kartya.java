@@ -1,6 +1,6 @@
 package hu.petrik.bankiszolgaltatasok;
 
-public abstract class Kartya extends BankiSzolgaltatas {
+public class Kartya extends BankiSzolgaltatas {
 
     private Szamla szamla;
     private String kartyaSzam;
