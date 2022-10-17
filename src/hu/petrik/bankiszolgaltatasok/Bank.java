@@ -33,7 +33,7 @@ public class Bank {
         return osszeg;
     }
 
-    public Szamla LegnagyobbEgyenleguSzamla(Tulajdonos tulajdonos) {
+    public Szamla getLegnagyobbEgyenleguSzamla(Tulajdonos tulajdonos) {
 
         int index = 0;
         int legnagyobb = szamlaLista.get(0).getAktualisEgyenleg();
@@ -47,7 +47,7 @@ public class Bank {
 
     }
 
-    public long getOsszHitelKeret() {
+    public long getOsszHitelkeret() {
         long osszeg = 0;
         for (Szamla sz : szamlaLista) {
             if (sz instanceof HitelSzamla) {
