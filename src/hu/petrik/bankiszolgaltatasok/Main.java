@@ -14,7 +14,7 @@ public class Main {
         HitelSzamla xd =(HitelSzamla) bank.szamlanyitas(tulajdonos,1000000000);
         xd.befizet(1000000000);
         xd.kivesz(100045);
-        xd.ujKartya("xdadadadada12345");
+        xd.ujKartya("xdadadadada12345").vasarlas(1000000);
         System.out.println(xd.aktualisEgyenleg);
         System.out.println(bank.getOsszegyenleg(tulajdonos));
         System.out.println(bank.getOsszHitelkeret());
@@ -23,6 +23,7 @@ public class Main {
         xd.kivesz(3333333);
         System.out.println(xd.getAktualisEgyenleg());
         System.out.println(bank.getLegnagyobbEgyenleguSzamla(tulajdonos).aktualisEgyenleg);
+
 
 
 

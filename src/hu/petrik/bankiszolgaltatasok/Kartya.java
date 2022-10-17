@@ -16,9 +16,9 @@ public class Kartya extends BankiSzolgaltatas {
         return kartyaSzam;
     }
     public boolean vasarlas(int osszeg){
-        if (this.vasarlas(osszeg)==true)
+        if (this.szamla.aktualisEgyenleg>=osszeg)
         {
-            this.vasarlas(osszeg);
+            this.szamla.aktualisEgyenleg-=osszeg;
             return true;
         }
         else{
